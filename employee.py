@@ -32,12 +32,12 @@ class Employee:
 
 
 
-        lbl_title=Label(self.root,text='PRANAV MANAGEMENT SYSTEM',font=('times new roman',37,'bold'),fg='navyblue',bg='white')
+        lbl_title=Label(self.root,text='EMPLOYEE MANAGEMENT SYSTEM',font=('times new roman',37,'bold'),fg='navyblue',bg='white')
         lbl_title.place(x=0,y=0,width=1530,height=50)
 
         # logo
         img_logo=Image.open('./emplogo.jpg')
-        img_logo=img_logo.resize((50,50),Image.ANTIALIAS)
+        img_logo=img_logo.resize((50,50),Image.LANCZOS)
         self.photo_logo=ImageTk.PhotoImage(img_logo)
 
         self.logo=Label(self.root,image=self.photo_logo)
@@ -49,7 +49,7 @@ class Employee:
 
         # 1st
         img1=Image.open('./emp1.jpg')
-        img1=img1.resize((540,160),Image.ANTIALIAS)
+        img1=img1.resize((540,160),Image.LANCZOS)
         self.photo1=ImageTk.PhotoImage(img1)
 
         self.img_1=Label(img_frame,image=self.photo1)
@@ -57,7 +57,7 @@ class Employee:
 
         # 2nd
         img2=Image.open('./emp1.jpg')
-        img2=img2.resize((540,160),Image.ANTIALIAS)
+        img2=img2.resize((540,160),Image.LANCZOS)
         self.photo2=ImageTk.PhotoImage(img2)
 
         self.img_2=Label(img_frame,image=self.photo2)
@@ -65,7 +65,7 @@ class Employee:
 
         # 3rd
         img3=Image.open('./emp1.jpg')
-        img3=img3.resize((540,160),Image.ANTIALIAS)
+        img3=img3.resize((540,160),Image.LANCZOS)
         self.photo3=ImageTk.PhotoImage(img3)
 
         self.img_3=Label(img_frame,image=self.photo3)
@@ -181,7 +181,7 @@ class Employee:
 
         # Center Picture
         img_cen=Image.open('./group.jpg')
-        img_cen=img_cen.resize((245,245),Image.ANTIALIAS)
+        img_cen=img_cen.resize((245,245),Image.LANCZOS)
         self.photocen=ImageTk.PhotoImage(img_cen)
 
         self.img_cen=Label(upper_frame,image=self.photocen)
@@ -240,7 +240,7 @@ class Employee:
         msg_text.place(x=860,y=0,width=600,height=30)
 
         msg_logo=Image.open(r'./msglogo.jpg')
-        msg_logo=msg_logo.resize((50,50),Image.ANTIALIAS)
+        msg_logo=msg_logo.resize((50,50),Image.LANCZOS)
         self.pmsg_logo=ImageTk.PhotoImage(msg_logo)
 
         self.logo=Label(search_frame,image=self.pmsg_logo)
